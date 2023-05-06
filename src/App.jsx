@@ -1,27 +1,19 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Container from "./Components/Styles/Container.styles";
 import Image from "./Components/Styles/Image.styles";
 import Banner from "./assets/images/banner.png";
+import Tag from "./Components/Styles/Tag.styles";
 
 function App() {
   const [count, setCount] = useState(0);
 
+
   return (
     <>
-      <Container>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+      <Container backgroundColor="#393939">
+        <Tag>Learning Styled Components</Tag>
         <Image src={Banner} />
-        </a>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </Container>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -34,6 +26,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      </Container>
     </>
   );
 }
