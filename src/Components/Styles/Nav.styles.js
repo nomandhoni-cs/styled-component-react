@@ -4,6 +4,6 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: ${props => props.backgroundColor};
+    background-color: ${props => props.theme.bg};
 `;
 export default Nav;

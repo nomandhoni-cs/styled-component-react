@@ -1,9 +1,8 @@
 import styled from "styled-components";
 const Container = styled.div`
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: auto;
     min-width : 320px;
-    background-color: ${props => props.backgroundColor};
+    background-color: ${props => props.theme.bg};
 `;
 export default Container;
