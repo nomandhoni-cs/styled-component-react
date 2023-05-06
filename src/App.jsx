@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0);
   const backgroundColor = {
     dark: "#393939",
-    light: "#fff",
+    light: "#f9f9f9ff",
   };
   const [theme, setTheme] = useState(true);
 
@@ -23,7 +23,7 @@ function App() {
         </button>
         <Tag color={theme ? backgroundColor.light: backgroundColor.dark}>Learning Styled Components</Tag>
         <Image src={Banner} />
-        <h1>Vite + React</h1>
+        <Tag color={theme ? backgroundColor.light: backgroundColor.dark}>Vite + React</Tag>
         <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
